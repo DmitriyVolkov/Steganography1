@@ -54,7 +54,6 @@ int main(int argc, char* argv[])
 				if (string[11] != 69)
 				{
 					cout << "Error! This file isn't wav file!";
-					system("pause");
 					return 0;
 				}	
 			}
