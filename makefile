@@ -1,3 +1,3 @@
 all:
 	
-	g++ -w -o stegano main.cpp -lm
+	g++ -w -o stegano stegano.cpp -lm
