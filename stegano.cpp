@@ -17,6 +17,12 @@ vector<unsigned char> read(ifstream &inputFile)
 
 int main(int argc, char* argv[])
 {
+	if (argc != 3)
+	{
+		cout << "We need arguments" << endl;
+		system("pause");
+		return 0;
+	}
 	
 	ifstream wavFile("input.wav", ios::binary);
 	if (!wavFile)
