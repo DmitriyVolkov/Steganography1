@@ -20,7 +20,6 @@ int main(int argc, char* argv[])
 	if (argc != 3)
 	{
 		cout << "We need arguments" << endl;
-		system("pause");
 		return 0;
 	}
 	
