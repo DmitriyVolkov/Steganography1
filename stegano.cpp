@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 	
 	
 	char string[15];
-	ifstream fin("input.wav");
+	ifstream fin(argv[1]);
 	fin.getline(string, 15);
 	fin.close();
 	if (string[8] != 87)
