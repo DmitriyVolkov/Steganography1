@@ -24,14 +24,14 @@ int main(int argc, char* argv[])
 		return 0;
 	}
 	
-	ifstream wavFile("input.wav", ios::binary);
+	ifstream wavFile(argv[1], ios::binary);
 	if (!wavFile)
 	{
 		cout << "Error! Unable to open wav file! " << argv[1] << endl;
 		return 0;
 	}
 
-	ifstream txtFile("input.txt", ios::binary);
+	ifstream txtFile(argv[2], ios::binary);
 	if (!txtFile)
 	{
 		cout << "Error! Unable to open txt file! " << argv[2] << endl;
