@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 	
 	char string[15];
 	ifstream fin("input.wav");
-	fin.getline(string, 15); // считали строку из файла
+	fin.getline(string, 15);
 	fin.close();
 	if (string[8] != 87)
 	{
@@ -55,19 +55,7 @@ int main(int argc, char* argv[])
 			}
 		}
 	}
-	/*for (int i = 8; i < 12; i++)
-	{
-		tmp += mas_wav[i];
-	}
-	if (tmp != ".wav")
-	{
-		cout << "Error! This file isn't wav file!";
-		return 0;
-	}*/
-
-//	if (mas_wav[8] != "W")
-
-
+	
 
 	if (mas_wav.size() - 44 < mas_txt.size() * 8)
 	{
